@@ -1,18 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
 	box-sizing: border-box;
 }
 
 body{
-
-	font-family: sans-serif;
-	line-height: 1.5em;
-	background:white;
-	font-size: 1em;
-}
+		font-family: 'Roboto Mono', monospace;
+		font-size: 18pt;
+		line-height: 1.5em;
+		background-color: white;
+	}
 
 h1{
 	margin: 20px;
-	font-size: 3em;
+	font-size: .75em;
 	font-style: bold;
 }
 
@@ -26,7 +27,7 @@ h1{
 ul{
 	list-style: none;
 }
- 
+
 ul li{
 	color: #dadada;
 }
@@ -36,8 +37,6 @@ a:link{
 	text-decoration: none;
 }
 
-a:hover{
-	text-decoration: underline;
+a:hover {
+	background-color: yellow;
 }
-
-

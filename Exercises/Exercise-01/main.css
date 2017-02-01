@@ -1,0 +1,61 @@
+* {
+	box-sizing: content-box;
+}
+
+body{
+	background:black;
+}
+
+.pattern-1{
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	z-index: 1;
+	padding-bottom: 200px;
+	/* create pattern-1 CSS here */
+}
+
+.circle{
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 50%;
+	margin: 50px;
+	float: left;
+}
+
+.pattern-2{
+	width: 500px;
+	height: 100%;
+	z-index: 100;
+	position: absolute;
+	/* create pattern-2 CSS here */
+}
+.square{
+	width: 100px;
+	height: 100px;
+	border: 2px dotted white;
+	margin: 10px;
+	float: left;
+}
+
+.pattern-3{
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	/* create pattern-3 CSS here */
+}
+.colored{
+	background-color: red;
+	opacity: .5;
+}
+
+.largescale{
+	margin: -30px;
+	width: 100px;
+	height: 100px;
+}
+
+.pattern-4{
+	height: 100%;
+}
