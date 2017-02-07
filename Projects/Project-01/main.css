@@ -1,42 +1,65 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Codystar');
 
 * {
 	box-sizing: border-box;
 }
 
 body{
-		font-family: 'Roboto Mono', monospace;
+		font-family: helvetica, sans-serif;;
 		font-size: 18pt;
 		line-height: 1.5em;
-		background-color: white;
 	}
 
-h1{
-	margin: 20px;
+h3{
 	font-size: .75em;
+	text-align: center;
+	color: grey;
+	letter-spacing: 10px;
+	text-transform: uppercase;
 	font-style: bold;
-}
-
-.main{
-	width: 80%;
+	width: 800px;
 	margin: 100px auto;
-	padding: 50px;
+	margin-bottom: -20px;
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
+a{
+	color: grey;
+	transition: font-size 1s ease, color 1s ease;
+}
+
+.level{
+	font-family: "Codystar";
+	font-size: 50px;
+	text-align: center;
+	width: 200px;
+	margin: 150px auto;
+	padding: 25px;
+	float: left;
+	overflow: auto;
+}
+
+.content{
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: -100px;
+}
 
 ul{
 	list-style: none;
 }
 
 ul li{
-	color: #dadada;
+	color: black;
 }
 
 a:link{
-	color: #0000ff;
+	color: black;
 	text-decoration: none;
 }
 
 a:hover {
-	background-color: yellow;
+	color: tomato;
+	font-size: 60px;
 }
