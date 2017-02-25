@@ -1,0 +1,113 @@
+@import url();
+
+body {
+
+}
+
+.decorative{
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  width: 100%;
+}
+
+#square{
+  width: 400px;
+  height: 400px;
+  background: rgba(0,0,255, 0.5);
+  display: inline-block;
+  margin-right: 15%;
+}
+
+#circle{
+  width: 400px;
+  height: 400px;
+  background: rgba(0,0,255, 0.5);
+  border-radius: 200px;
+  display: inline-block;
+  margin-right: 15%;
+}
+
+/* Text
+-------------------------------------------------- */
+
+
+
+/* Image
+-------------------------------------------------- */
+
+/* Shapes */
+
+/* iPad
+-------------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  /* text */
+
+  h1{
+    font-family: sans-serif;
+    color: blue;
+  }
+  h2{
+    font-family: sans-serif;
+    color: blue;
+  }
+  h3{
+    font-family: sans-serif;
+    color: blue;
+  }
+
+  /* image */
+
+  img{
+    width: 100%;
+  }
+
+}
+
+/* Mobile
+-------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  /* text */
+
+  h1{
+    font-family: sans-serif;
+    color: blue;
+  }
+  h2{
+    font-family: sans-serif;
+    color: blue;
+  }
+  h3{
+    font-family: sans-serif;
+    color: blue;
+  }
+  /* image */
+
+  img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #square{
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,255, 0.5);
+    border-radius: 200px;
+    display: inline-block;
+    margin-right: 15%;
+  }
+
+  #circle{
+    width: 200px;
+    height: 200px;
+    background: rgba(0,0,255, 0.5);
+    border-radius: 200px;
+    display: inline-block;
+    margin-right: 15%;
+  }
+
+}
