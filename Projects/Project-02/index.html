@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<!-- Image Credit: Paradise Valley Folklife Project collection, 1978-1982 (AFC 1991/021), American Folklife Center, Library of Congress -->
+
+	<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+
+	<title>Découpé</title>
+	<meta charset="UTF-8">
+	<script language="javascript" src="libraries/p5.js" type="text/javascript"></script>
+
+	<!-- uncomment lines below to include extra p5 libraries -->
+
+	<!-- <script language="javascript" src="libraries/p5.dom.js">
+	</script>
+	<script language="javascript" src="libraries/p5.sound.js">
+	</script>
+	<script language="javascript" src="sketch.js" type="text/javascript">
+	</script> -->
+	<!-- this line removes any default padding and style. you might only need one of these values set. -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+	<style>
+	   body {
+	   	padding: 0;
+	   	margin: 0;
+	   }
+
+	</style>
+
+	<script>
+  	$(document).ready(function(){
+       $('.drag').draggable();
+       $('.drag').click(function(){
+       });
+       });
+
+  	 window.alert("The cut-up technique is an aleatory literary technique that involves cutting up text and rearranging them into a new text. Originally used by the Dadaists in the 1920s, the method came into popular usage again in the late 1950s throught William Burroughs. In 1963, Burroughs wrote an essay 'The Cut Up Method' in which he explains the origins, process, and significance of the technique. At the end, he proceeds to use cut-ups to rearrange his text above. This is that text. And now it is your turn. In the words of William Burroughs, 'Cut ups are for everyone.'");
+
+  </script>
+
+</head>
+
+<body background="meatcrop.jpg" style="height: 95%, background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover">
+
+	<div id="title">
+		<p>The Cut Up Method * William Burroughs</p>
+	</div>
+
+<div id="cutup">
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 350px">all</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 410px">writing</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 530px">is</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 570px">in</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 611px">fact</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 685px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 742px">ups</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 800px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 95px; margin-left: 842px">games</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 125px; margin-left: 350px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 125px; margin-left: 410px">economic</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 125px; margin-left: 550px">behavior</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 125px; margin-left: 690px">overhead?</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 125px; margin-left: 845px">what</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 125px; margin-left: 920px">else?</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 155px; margin-left: 350px">assume</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 155px; margin-left: 458px">that</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 155px; margin-left: 535px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 155px; margin-left: 595px">worst</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 155px; margin-left: 687px">has</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 155px; margin-left: 747px">happened</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 155px; margin-left: 887px">explicit</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 350px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 410px">subject</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 535px">to</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 580px">strategy</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 720px">is</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 765px">at</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 810px">some</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 185px; margin-left: 885px">point</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 215px; margin-left: 350px">classical</p>
+	</div>
+
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 215px; margin-left: 510px">prose.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 215px; margin-left: 615px">cutting</p>
+	</div>
+
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 215px; margin-left: 740px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 215px; margin-left: 800px">rearranging</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 245px; margin-left: 350px">factor</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 245px; margin-left: 457px">your</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 245px; margin-left: 533px">opponent</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 245px; margin-left: 676px">will</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 245px; margin-left: 753px">gain</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 245px; margin-left: 830px">introduces</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 275px; margin-left: 350px">a</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 275px; margin-left: 378px">new</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 275px; margin-left: 438px">dimension</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 275px; margin-left: 596px">your</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 275px; margin-left: 673px">strategy.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 275px; margin-left: 825px">how</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 275px; margin-left: 887px">many</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 305px; margin-left: 350px">discoveries</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 305px; margin-left: 540px">sound</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 305px; margin-left: 630px">to</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 305px; margin-left: 675px">kinesthetic?</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 305px; margin-left: 880px">we</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 305px; margin-left: 923px">can</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 350px">now</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 410px">produce</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 538px">accident</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 678px">to</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 722px">his</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 783px">color</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 873px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 335px; margin-left: 917px">vowels.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 350px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 410px">new</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 470px">dimension</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 625px">to</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 668px">films</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 758px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 820px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 365px; margin-left: 880px">senses.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 350px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 410px">place</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 500px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 543px">sand.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 630px">gambling</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 768px">scenes</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 875px">all</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 395px; margin-left: 937px">times</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 425px; margin-left: 350px">color</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 425px; margin-left: 440px">tasting</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 425px; margin-left: 560px">sounds</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 425px; margin-left: 665px">smell</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 425px; margin-left: 755px">streets</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 425px; margin-left: 875px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 425px; margin-left: 918px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 350px">world.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 455px">when</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 528px">you</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 585px">can</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 645px">have</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 720px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 780px">bet</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 840px">all:</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 455px; margin-left: 910px">poetry</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 350px">is</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 395px">for</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 455px">everyone</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 590px">doctor</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 695px">neuman</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 800px">in</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 845px">a</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 485px; margin-left: 875px">collage</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 350px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 395px">words</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 485px">read</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 560px">heard</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 650px">introduced</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 820px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 880px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 515px; margin-left: 940px">ups</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 545px; margin-left: 350px">scissors</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 545px; margin-left: 488px">renders</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 545px; margin-left: 610px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 545px; margin-left: 673px">process</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 545px; margin-left: 793px">game</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 545px; margin-left: 870px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 575px; margin-left: 350px">military</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 575px; margin-left: 490px">strategy,</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 575px; margin-left: 640px">variation</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 575px; margin-left: 795px">clear</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 575px; margin-left: 890px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 575px; margin-left: 950px">act</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 605px; margin-left: 350px">accordingly.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 605px; margin-left: 545px">if</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 605px; margin-left: 590px">you</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 605px; margin-left: 650px">posed</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 605px; margin-left: 740px">entirely</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 605px; margin-left: 875px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 635px; margin-left: 350px">rearranged</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 635px; margin-left: 515px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 635px; margin-left: 575px">determined</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 635px; margin-left: 740px">by</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 635px; margin-left: 785px">random</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 635px; margin-left: 890px">a</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 635px; margin-left: 920px">page</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 665px; margin-left: 350px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 665px; margin-left: 395px">written</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 665px; margin-left: 515px">words</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 665px; margin-left: 605px">no</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 665px; margin-left: 650px">advantage</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 665px; margin-left: 800px">from</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 665px; margin-left: 875px">knowing</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 695px; margin-left: 350px">into</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 695px; margin-left: 425px">writer</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 695px; margin-left: 530px">predict</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 695px; margin-left: 650px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 695px; margin-left: 710px">move.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 695px; margin-left: 795px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 695px; margin-left: 855px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 725px; margin-left: 350px">variation</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 725px; margin-left: 500px">images</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 725px; margin-left: 605px">shift</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 725px; margin-left: 700px">sense</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 725px; margin-left: 795px">advantage</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 725px; margin-left: 945px">in</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 755px; margin-left: 350px">processing</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 755px; margin-left: 520px">to</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 755px; margin-left: 565px">sound</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 755px; margin-left: 655px">sight</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 755px; margin-left: 745px">to</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 755px; margin-left: 790px">sound.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 755px; margin-left: 895px">have</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 350px">been</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 425px">made</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 500px">by</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 545px">accident</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 680px">is</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 725px">where</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 815px">rimbaud</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 785px; margin-left: 940px">was</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 350px">going</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 437px">with</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 510px">order</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 600px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 660px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 718px">ups</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 775px">could</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 815px; margin-left: 865px">systematic</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 845px; margin-left: 350px">derangement</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 845px; margin-left: 530px">of</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 845px; margin-left: 570px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 845px; margin-left: 630px">gambling</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 845px; margin-left: 770px">scene</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 845px; margin-left: 860px">in</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 845px; margin-left: 905px">with</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 875px; margin-left: 350px">a</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 875px; margin-left: 380px">tea</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 875px; margin-left: 440px">hallucination:</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 875px; margin-left: 665px">seeing</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 875px; margin-left: 770px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 875px; margin-left: 830px">places.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 350px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 410px">back.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 495px">cut</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 555px">forms.</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 660px">rearrange</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 815px">the</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 880px">word</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 905px; margin-left: 955px">and</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 935px; margin-left: 350px">image</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 935px; margin-left: 440px">to</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 935px; margin-left: 485px">other</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 935px; margin-left: 575px">fields</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 935px; margin-left: 680px">than</p>
+	</div>
+
+	<div class="drag">
+		<p style="position: absolute; margin-top: 935px; margin-left: 760px">writing.</p>
+	</div>
+</div>
+
+</body>
+</html>
