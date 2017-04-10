@@ -7,29 +7,87 @@
   		<script src="jquery-ui-1.12.1/jquery-ui.js"></script>
 
   		<style>
-  			#draggable, #draggable2{ 
-  				width: 150px;
-  				height: 150px;
-  				padding: 0.5em;
-          background-color: #0000ff;
-          font-style: sans-serif;
-          color: #ffffff;
+            .basic{
+                font-variant: small-caps;
+                font-family: Andale Mono, monospace;
+                color: #000000;
+                position: relative;
+                text-align: center;
+                padding: 0.5em;
+                position: relative;
+                margin-top: 50px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            
+  			#draggable1{ 
+  				width: 400px;
+                background-color: tomato;
   			 }
+            #draggable2{ 
+  				width: 150px;
+                background-color: tomato;
+  			 }
+            #draggable3{ 
+  				width: 150px;
+                background-color: tomato;
+  			 }
+            #draggable4{ 
+  				width: 150px;
+                background-color: tomato;
+                }
+            #draggable5{ 
+  				width: 150px;
+                background-color: tomato;
+                }
+            
+         #droppable1{
+              width: 400px;
+              background-color: #ffffff;
+              border: black 5px dashed;
+              }
+            #droppable2{
+              width: 150px;
+              background-color: #ffffff;
+              border: black 5px dashed;
+              }
+            #droppable3{
+              width: 150px;
+              background-color: #ffffff;
+              border: black 5px dashed;
+             }
+            #droppable4{
+              width: 150px;
+              background-color: #ffffff;
+              border: black 5px dashed;
+             }
+            #droppable5{
+              width: 150px;
+              background-color: #ffffff;
+              border: black 5px dashed;
+              margin-bottom: 50px;
+              }
 
          #draggable:hover{
           cursor: cell;
          }
 
-          #draggable2:hover{
-          cursor: wait;
-         }
+
   		</style>
 
       <script>
 
         $(function(){
-          $('#draggable').draggable();
+          $('#draggable1').draggable();
           $('#draggable2').draggable();
+          $('#draggable3').draggable();
+          $('#draggable4').draggable();
+          $('#draggable5').draggable();
+          $('#droppable1').droppable();
+          $('#droppable2').droppable();
+          $('#droppable3').droppable();
+          $('#droppable4').droppable();
+          $('#droppable5').droppable();
         });
 
       </script>
@@ -37,13 +95,45 @@
 
 	<body>
 
-		<div id= "draggable" class="ui-widget-content">
-			<p> Drag me around! </p>
+		<div id= "draggable1" class="ui-widget-content, basic">
+			<p> drag me! </p>
+		</div>
+        
+        <div id= "droppable1" class="ui-widget-header, basic">
+          <p> drop here! </p>
+        </div>
+        
+        <div id= "draggable2" class="ui-widget-content, basic">
+			<p> drag me! </p>
+		</div>
+        
+        <div id= "droppable2" class="ui-widget-header, basic">
+          <p> drop here! </p>
+        </div>
+        
+        <div id= "draggable3" class="ui-widget-content, basic">
+			<p> drag me! </p>
+		</div>
+        
+        <div id= "droppable3" class="ui-widget-header, basic">
+          <p> drop here! </p>
+        </div>
+        
+        <div id= "draggable4" class="ui-widget-content, basic">
+			<p> drag me! </p>
+		</div>
+        
+        <div id= "droppable4" class="ui-widget-header, basic">
+          <p> drop here! </p>
+        </div>
+        
+        <div id= "draggable5" class="ui-widget-content, basic">
+			<p> drag me! </p>
 		</div>
 
-    <div id= "draggable2" class="ui-widget-content">
-      <p> Drag me too! </p>
-    </div>
+        <div id= "droppable5" class="ui-widget-header, basic">
+          <p> drop here! </p>
+        </div>
 
 	</body>
 </html

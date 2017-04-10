@@ -4,28 +4,16 @@ body {
 
 }
 
-.decorative{
-  position: absolute;
-  top: 45%;
-  left: 15%;
-  width: 100%;
+h1{
+  text-align: center;
+  font-size: 100px;
 }
 
-#square{
-  width: 400px;
-  height: 400px;
-  background: rgba(0,0,255, 0.5);
-  display: inline-block;
-  margin-right: 15%;
-}
-
-#circle{
-  width: 400px;
-  height: 400px;
-  background: rgba(0,0,255, 0.5);
-  border-radius: 200px;
-  display: inline-block;
-  margin-right: 15%;
+img{
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  margin-top: 100px;
 }
 
 /* Text
@@ -75,6 +63,8 @@ body {
   h1{
     font-family: sans-serif;
     color: blue;
+    font-size: 100px;
+    text-align: center;
   }
   h2{
     font-family: sans-serif;
@@ -90,24 +80,9 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  #square{
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,255, 0.5);
-    border-radius: 200px;
+    border-radius: 400px;
     display: inline-block;
-    margin-right: 15%;
-  }
-
-  #circle{
-    width: 200px;
-    height: 200px;
-    background: rgba(0,0,255, 0.5);
-    border-radius: 200px;
-    display: inline-block;
-    margin-right: 15%;
+    margin-top: 100px;
   }
 
 }
