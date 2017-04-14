@@ -1,0 +1,81 @@
+<html>
+	<head>
+
+	<title>Audio and Video</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+			var myVideo = document.getElementById("beachy");
+
+				myVideo.pause();
+
+				//$("#doorbell")[0].play();
+		
+				//var dogAudio = $("#bark")[0];
+				//dogAudio.play();
+		
+				var sweetjazzAudio = $("#jazz")[0];
+				$("#beachy").mouseenter(function(){
+					sweetjazzAudio.play();
+					myVideo.play();
+				});
+
+				$("#beachy").mouseout(function(){
+					myVideo.pause();
+					sweetjazzAudio.pause();
+				});
+
+				$("#click").click(function(){
+					$("#beachy").clone().appendTo("#box1");	
+				});
+				
+			});
+
+		</script>
+
+		<style>
+		body{
+			background-color: black;
+		}
+
+			#beachy{
+				margin-top: 10%;
+				margin-left: 30%;
+				margin-right: 10%;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		</div>
+
+		<audio id= "doorbell">
+			<source src="assets/doorbell.mp3" type="audio/mp3">
+		</audio>
+
+		<!-- <audio controls>
+			<source src="assets/horse.ogg" type="audio/ogg">
+		</audio> -->
+<!--
+		<audio autoplay>
+			<source src="assets/meow.wav" type="audio/wav">
+		</audio>
+-->
+
+		 <audio id="jazz" repeat>
+			<source src="assets/sweetjazz.mp3" type="audio/wav">
+		</audio> 
+
+		<video muted id="beachy" width="1000px" autoplay>
+			<source src="assets/wingsoversf.mp4">
+			Sorry, your browser doesn't support HTML5 video :(
+		</video>
+
+		<!-- <a id="click">Click me!</a> -->
+	</body>
+</html>
