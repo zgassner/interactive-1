@@ -1,0 +1,31 @@
+.day{
+	width: 12000px;
+	height: 600px;
+	margin-bottom: 75%;
+
+}
+.storybox{
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-right: 15%;
+	width: 800px;
+	height: 200px;
+	display: inline-block;
+	
+}
+.norm{
+	font-size: 50px;
+	font-weight: 700;
+	font-family: 'Old Standard TT', serif;
+}
+.norm2{
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Old Standard TT', serif;
+}
+.pull{
+	font-size: 75px;
+	font-weight: 700;
+	font-family: 'Old Standard TT', serif;
+}
+

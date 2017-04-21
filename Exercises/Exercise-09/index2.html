@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+  <title>
+    ScrollTop and Offset
+  </title>
+  <style>
+	  body {
+	  	margin: 0;
+	  }
+
+  	button {
+  		padding: 10px;
+  		margin: 5px;
+      	width: 50px;
+  		font-size: 1.0em;
+      	font-family: Megrim, monospace;
+  		cursor: pointer;
+      	text-align: center;
+  	}
+
+  	.nav {
+  		position: fixed;
+  		top:100px;
+  		left:0;
+  		padding: 15px;
+  	}
+
+    .box {
+    	height: 800px;
+    	background-size: cover;
+    	background-position: center center;
+    	text-align: center;
+    }
+
+    .s1{
+    	background-image: url('assets/01.jpg');
+    }
+    .s2{
+    	background-image: url('assets/02.jpg');
+    }
+    .s3{
+    	background-image: url('assets/03.jpg');
+    }
+    .s4{
+    	background-image: url('assets/04.jpg');
+    }
+    .s5{
+    	background-image: url('assets/05.jpg');
+    }
+
+  </style>
+
+  <script>
+
+  	$(document).ready(function(){
+
+  		$("#btn-s1").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s1").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s2").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s2").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s3").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s3").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s4").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s4").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s5").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s5").offset().top
+			    }, 1000);
+			});
+
+			console.log( $(".s5").offset() );
+
+
+  	});
+    
+  </script>
+</head>
+
+<body>
+
+	<div class="nav">
+		<button id="btn-s1">1</button><br />
+		<button id="btn-s2">2</button><br />
+		<button id="btn-s3">3</button><br />
+		<button id="btn-s4">4</button><br />
+		<button id="btn-s5">5</button><br />
+    <a href="index.html"><button>&#8592;</button></a><br />
+	</div>
+  
+  <div class="box s1">
+  </div>
+  
+  <div class="box s2">
+  </div>
+  
+  <div class="box s3">
+  </div>
+  
+  <div class="box s4">
+  </div>
+  
+  <div class="box s5">
+  </div>
+
+</body>
+</html>
