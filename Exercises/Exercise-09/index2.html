@@ -23,6 +23,14 @@
       	text-align: center;
   	}
 
+    #horizontalContainer{
+      width: auto;
+      height: 800px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+    }
+
   	.nav {
   		position: fixed;
   		top:100px;
@@ -57,35 +65,37 @@
 
   <script>
 
+    window.alert("Joanna! I couldn't get the horizontal code to work with just the CSS example given.");
+
   	$(document).ready(function(){
 
   		$("#btn-s1").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s1").offset().top
+			        scrollLeft: $(".s1").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s2").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s2").offset().top
+			        scrollLeft: $(".s2").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s3").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s3").offset().top
+			        scrollLeft: $(".s3").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s4").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s4").offset().top
+			        scrollLeft: $(".s4").offset().left
 			    }, 1000);
 			});
 
   		$("#btn-s5").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".s5").offset().top
+			        scrollLeft: $(".s5").offset().left
 			    }, 1000);
 			});
 
@@ -98,7 +108,6 @@
 </head>
 
 <body>
-
 	<div class="nav">
 		<button id="btn-s1">1</button><br />
 		<button id="btn-s2">2</button><br />
@@ -107,20 +116,20 @@
 		<button id="btn-s5">5</button><br />
     <a href="index.html"><button>&#8592;</button></a><br />
 	</div>
-  
-  <div class="box s1">
+ 
+  <div class="box s1" id="horizontalContainer">
   </div>
   
-  <div class="box s2">
+  <div class="box s2" id="horizontalContainer">
   </div>
   
-  <div class="box s3">
+  <div class="box s3" id="horizontalContainer">
   </div>
   
-  <div class="box s4">
+  <div class="box s4" id="horizontalContainer">
   </div>
   
-  <div class="box s5">
+  <div class="box s5" id="horizontalContainer">
   </div>
 
 </body>
